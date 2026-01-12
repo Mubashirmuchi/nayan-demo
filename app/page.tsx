@@ -6,6 +6,7 @@ import Section3 from "@/components/section3";
 import Section4 from "@/components/section4";
 import Gallery from "@/components/slider";
 // import OurValue from "@/components/values";
+import Image from "next/image";
 import Goals from "@/components/visoin";
 import WhoWeAre from "@/components/whoweare";
 // import Image from "next/image";
@@ -20,34 +21,36 @@ export default function Home() {
   return (
     <main className="relative h-screen text-white ">
       {/* Background */}
-      <div className="absolute inset-0 -z-10">
-        {/* <Image
-          src="/hero.png" // put your image in /public
-          alt="Townhouse"
-          fill
-          priority
-          className="object-cover"
-        /> */}
-        <video
-          className="absolute inset-0 w-full h-full object-cover -z-10 hero-video"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-        >
-          <source
-            src="https://res.cloudinary.com/du8hedlvt/video/upload/v1768229534/heroo_ehjav7.mov"
-            type="video/webm"
-          />
-          <source
-            src="https://res.cloudinary.com/du8hedlvt/video/upload/v1768229534/heroo_ehjav7.mov"
-            type="video/mp4"
-          />
-        </video>
+   <div className="absolute inset-0 -z-10">
+  <video
+    className="absolute inset-0 w-full h-full object-cover -z-10 hero-video"
+    autoPlay
+    muted
+    loop
+    playsInline
+    webkit-playsinline="true"
+    preload="auto"
+    poster="/hero.png" // 👈 fallback image from /public
+  >
+    <source
+      src="https://res.cloudinary.com/du8hedlvt/video/upload/f_mp4/v1768229534/heroo_ehjav7.mov"
+      type="video/mp4"
+    />
+    {/* Fallback if video cannot play */}
+    <Image
+      fill
+      priority
+      src="/hero.png"
+      alt="Townhouse"
+      className="w-full h-full object-cover"
+    />
+  </video>
 
-        <div className="absolute inset-0 bg-black/60"></div>
-      </div>
+  <div className="absolute inset-0 bg-black/60"></div>
+</div>
+
+
+      
       {/* Navbar */}
       <nav className="w-full absolute top-0 left-0 px-8 py-5 flex justify-between items-center">
         <h1 className="text-2xl font-bold">Nayan</h1>
