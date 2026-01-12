@@ -29,22 +29,25 @@ export default function Home() {
           className="object-cover"
         /> */}
         <video
-          className="absolute inset-0 w-full h-full object-cover -z-10"
+          className="absolute inset-0 w-full h-full object-cover -z-10 hero-video"
           autoPlay
           muted
           loop
           playsInline
           preload="auto"
         >
-          <source src="https://res.cloudinary.com/du8hedlvt/video/upload/v1768229534/heroo_ehjav7.mov" type="video/webm" />
-          <source src="https://res.cloudinary.com/du8hedlvt/video/upload/v1768229534/heroo_ehjav7.mov" type="video/mp4" />
+          <source
+            src="https://res.cloudinary.com/du8hedlvt/video/upload/v1768229534/heroo_ehjav7.mov"
+            type="video/webm"
+          />
+          <source
+            src="https://res.cloudinary.com/du8hedlvt/video/upload/v1768229534/heroo_ehjav7.mov"
+            type="video/mp4"
+          />
         </video>
-
-        
 
         <div className="absolute inset-0 bg-black/60"></div>
       </div>
-
       {/* Navbar */}
       <nav className="w-full absolute top-0 left-0 px-8 py-5 flex justify-between items-center">
         <h1 className="text-2xl font-bold">Nayan</h1>
@@ -67,7 +70,6 @@ export default function Home() {
           </option>
         </select>
       </nav>
-
       {/* Hero Content */}
       <section className="h-full flex flex-col justify-center px-8 md:px-20 max-w-3xl">
         <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
@@ -93,13 +95,12 @@ export default function Home() {
         </form>
       </section>
       <Section2 />
-      <Section3 />
+      <Section3 /> <Gallery />
       <Section4 />
       <WhoWeAre />
       <Goals />
       {/* <OurValue /> */}
       {/* <Clients /> */}
-      <Gallery />
       <Footer />
       <Chatbot />
     </main>
