@@ -51,7 +51,7 @@ const Section3 = () => {
             <video
               autoPlay
               muted
-              className="bg-gray-700 rounded-md h-64 md:h-80 flex items-center justify-center relative"
+              className=" rounded-md h-64 md:h-80 flex items-center justify-center relative"
               controls
             >
               <source

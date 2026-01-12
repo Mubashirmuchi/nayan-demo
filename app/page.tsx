@@ -28,7 +28,7 @@ export default function Home() {
           priority
           className="object-cover"
         /> */}
-        {/* <video
+        <video
           className="absolute inset-0 w-full h-full object-cover -z-10"
           autoPlay
           muted
@@ -36,15 +36,11 @@ export default function Home() {
           playsInline
           preload="auto"
         >
-          <source src="/hero.mov" type="video/webm" />
-          <source src="/hero.mov" type="video/mp4" />
-        </video> */}
+          <source src="https://res.cloudinary.com/du8hedlvt/video/upload/v1768229534/heroo_ehjav7.mov" type="video/webm" />
+          <source src="https://res.cloudinary.com/du8hedlvt/video/upload/v1768229534/heroo_ehjav7.mov" type="video/mp4" />
+        </video>
 
-        <iframe
-          src="https://www.youtube.com/embed/q-RVhwAwOGs?autoplay=1&mute=1&controls=0&loop=1&playlist=q-RVhwAwOGs&playsinline=1"
-          className="absolute inset-0 w-full h-full object-cover -z-10"
-          allow="autoplay; fullscreen"
-        ></iframe>
+        
 
         <div className="absolute inset-0 bg-black/60"></div>
       </div>
